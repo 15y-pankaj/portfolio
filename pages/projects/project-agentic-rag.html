@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-theme="sunset">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agentic RAG: IT Support Copilot | Pankaj Yadav</title>
+<meta name="description" content="An AI help-desk assistant that checks its own answers before replying.">
+<meta name="theme-color" content="#030303">
+<meta property="og:title" content="Agentic RAG: IT Support Copilot | Pankaj Yadav">
+<meta property="og:description" content="An AI help-desk assistant that checks its own answers before replying.">
+<meta property="og:type" content="website">
+<script>try{var t=localStorage.getItem('theme');if(['aurora','sunset','emerald','light'].indexOf(t)>-1)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<div class="progress" id="pg"></div><div class="cur" id="cur"></div>
+<a class="skip" href="#main">Skip to content</a>
+<button class="mt" id="mt" aria-pressed="false">▮▮ MOTION ON</button>
+<header class="nav" id="nav" data-h="false">
+  <a class="brand" href="index.html">Pankaj Yadav</a>
+  <nav class="links" id="links" aria-label="Primary">
+    <a href="work.html" class="active">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#coding">Coding</a>
+    <a class="cta" href="#contact">Let’s talk ↗</a>
+  </nav>
+  <div class="nav-right">
+    <div class="theme-line" role="radiogroup" aria-label="Colour theme"><button class="tdot on" role="radio" aria-checked="true" data-theme="sunset" data-name="Ember" aria-label="Ember theme"></button><button class="tdot" role="radio" aria-checked="false" data-theme="aurora" data-name="Aurora" aria-label="Aurora theme"></button><button class="tdot" role="radio" aria-checked="false" data-theme="emerald" data-name="Emerald" aria-label="Emerald theme"></button><button class="tdot" role="radio" aria-checked="false" data-theme="light" data-name="Light" aria-label="Light theme"></button></div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="glow g1"></div>
+  <div class="wrap">
+    <a class="back reveal" href="work.html">← BACK TO PROJECTS</a>
+    <p class="crumb reveal">PROJECTS / 01 / AGENTIC AI · GENERATIVE AI</p>
+    <h1 class="reveal d1" style="font-size:clamp(2.6rem,7vw,5.4rem)">Agentic RAG: IT Support Copilot</h1>
+    <p class="lead reveal d2">An AI help-desk assistant that checks its own answers before replying.</p>
+    <p class="contrib reveal d3">MY CONTRIBUTION · <b>Agent workflow · Retrieval · Backend API · Front end</b></p>
+    <div class="p-links reveal d3" style="margin-top:22px"><a href="https://github.com/15y-pankaj/Agentic_RAG" target="_blank" rel="noopener">GitHub ↗</a></div>
+    <div class="case-panel reveal d3"><div><b>3</b><span>ways it can answer: documents, the web, or an honest fallback</span></div><div><b>4</b><span>file types it can learn from: PDF, DOCX, TXT, MD</span></div><div><b>Every run</b><span>saved to an audit log</span></div></div>
+  </div>
+</section>
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="reveal"><p class="swipe" aria-hidden="true">← SWIPE SIDEWAYS TO SEE THE WHOLE FLOW →</p><div class="flow"><svg viewBox="-2 -2 904 474" role="img" aria-label="Agentic RAG architecture: a router sends each question either to a direct answer or to the Pinecone knowledge base; an LLM grades the evidence; weak evidence triggers a Tavily web search that is graded again; if that is weak too, a fallback answer states its limits."><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path class="ah" d="M0,0 L8,4 L0,8z"/></marker><marker id="ah-good" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path class="ah-good" d="M0,0 L8,4 L0,8z"/></marker><marker id="ah-weak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path class="ah-weak" d="M0,0 L8,4 L0,8z"/></marker></defs><path class="edge " d="M120,64 L160,64" marker-end="url(#ah)"/><path class="edge " d="M280,64 L320,64" marker-end="url(#ah)"/><text class="elabel" x="300" y="56" text-anchor="middle">RAG</text><path class="edge " d="M440,64 L480,64" marker-end="url(#ah)"/><path class="edge good" d="M600,64 L640,64" marker-end="url(#ah-good)"/><text class="elabel" x="620" y="56" text-anchor="middle">good</text><path class="edge " d="M760,64 L780,64" marker-end="url(#ah)"/><path class="edge weak" d="M540,88 L540,130 L380,130 L380,170" marker-end="url(#ah-weak)"/><text class="elabel" x="460" y="123" text-anchor="middle">weak</text><path class="edge " d="M440,194 L480,194" marker-end="url(#ah)"/><path class="edge good" d="M600,194 L640,194" marker-end="url(#ah-good)"/><text class="elabel" x="620" y="186" text-anchor="middle">good</text><path class="edge " d="M760,194 L780,194" marker-end="url(#ah)"/><path class="edge weak" d="M540,218 L540,300" marker-end="url(#ah-weak)"/><text class="elabel" x="552" y="262" text-anchor="start">weak</text><path class="edge " d="M640,324 L780,324" marker-end="url(#ah)"/><path class="edge " d="M220,88 L220,324 L480,324" marker-end="url(#ah)"/><text class="elabel" x="232" y="256" text-anchor="start">direct chat</text><circle class="dot" r="5"><animateMotion dur="6s" repeatCount="indefinite" path="M10,64 L890,64"/></circle><circle class="dot2" r="5"><animateMotion dur="5s" begin="1s" repeatCount="indefinite" path="M540,88 L540,130 L380,130 L380,194 L780,194"/></circle><g class="node"><rect x="0" y="40" width="120" height="48" rx="12"/><text class="t" x="60.0" y="61" text-anchor="middle">User</text><text class="s" x="60.0" y="77" text-anchor="middle">asks a question</text></g><g class="node hot"><rect x="160" y="40" width="120" height="48" rx="12"/><text class="t" x="220.0" y="61" text-anchor="middle">Router</text><text class="s" x="220.0" y="77" text-anchor="middle">LLM decides</text></g><g class="node"><rect x="320" y="40" width="120" height="48" rx="12"/><text class="t" x="380.0" y="61" text-anchor="middle">Retrieve</text><text class="s" x="380.0" y="77" text-anchor="middle">Pinecone · top-K</text></g><g class="node hot"><rect x="480" y="40" width="120" height="48" rx="12"/><text class="t" x="540.0" y="61" text-anchor="middle">Grade evidence</text><text class="s" x="540.0" y="77" text-anchor="middle">LLM · good / weak</text></g><g class="node"><rect x="640" y="40" width="120" height="48" rx="12"/><text class="t" x="700.0" y="61" text-anchor="middle">Answer from KB</text><text class="s" x="700.0" y="77" text-anchor="middle">LLM writes it</text></g><g class="node"><rect x="320" y="170" width="120" height="48" rx="12"/><text class="t" x="380.0" y="191" text-anchor="middle">Web search</text><text class="s" x="380.0" y="207" text-anchor="middle">Tavily search</text></g><g class="node hot"><rect x="480" y="170" width="120" height="48" rx="12"/><text class="t" x="540.0" y="191" text-anchor="middle">Grade web</text><text class="s" x="540.0" y="207" text-anchor="middle">LLM · good / weak</text></g><g class="node"><rect x="640" y="170" width="120" height="48" rx="12"/><text class="t" x="700.0" y="191" text-anchor="middle">Answer from web</text><text class="s" x="700.0" y="207" text-anchor="middle">LLM writes it</text></g><g class="node hot"><rect x="480" y="300" width="160" height="48" rx="12"/><text class="t" x="560.0" y="321" text-anchor="middle">Fallback answer</text><text class="s" x="560.0" y="337" text-anchor="middle">says what is missing</text></g><g class="node hot"><rect x="780" y="40" width="120" height="308" rx="12"/><text class="t" x="840" y="64" text-anchor="middle">Final answer</text><text class="s" x="840" y="80" text-anchor="middle">to the user</text><circle class="fin" cx="840" cy="194" r="26"/><path class="fin-c" d="M827,194 L837,205 L855,183"/><text class="s" x="840" y="262" text-anchor="middle">best available</text><text class="s" x="840" y="276" text-anchor="middle">information</text></g><text class="elabel" x="0" y="392" text-anchor="start">KNOWLEDGE BASE · PRIVATE DATA</text><path class="edge " d="M150,426 L200,426" marker-end="url(#ah)"/><path class="edge " d="M350,426 L400,426" marker-end="url(#ah)"/><path class="edge " d="M550,426 L600,426" marker-end="url(#ah)"/><g class="node"><rect x="0" y="402" width="150" height="48" rx="12"/><text class="t" x="75.0" y="423" text-anchor="middle">Documents</text><text class="s" x="75.0" y="439" text-anchor="middle">PDF · DOCX · TXT · MD</text></g><g class="node"><rect x="200" y="402" width="150" height="48" rx="12"/><text class="t" x="275.0" y="423" text-anchor="middle">Text splitter</text><text class="s" x="275.0" y="439" text-anchor="middle">chunks the text</text></g><g class="node"><rect x="400" y="402" width="150" height="48" rx="12"/><text class="t" x="475.0" y="423" text-anchor="middle">Embeddings</text><text class="s" x="475.0" y="439" text-anchor="middle">MiniLM-L6-v2 · 384-dim</text></g><g class="node hot"><rect x="600" y="402" width="150" height="48" rx="12"/><text class="t" x="675.0" y="423" text-anchor="middle">Pinecone</text><text class="s" x="675.0" y="439" text-anchor="middle">vector database</text></g><text class="elabel" x="770" y="430" text-anchor="start">↑ feeds Retrieve</text></svg></div></div>
+    <div class="chapter"><span class="n reveal">01 / CONTEXT</span><div class="reveal d1"><h2>The opportunity.</h2><p>Employees ask IT support questions all day. A normal AI chatbot answers confidently even when it found nothing useful. This project adds a checking step, so the assistant only answers when it has good evidence.</p></div></div>
+    <div class="chapter"><span class="n reveal">02 / MY CONTRIBUTION</span><div class="reveal d1"><h2>Where I came in.</h2><p>I designed how the assistant thinks and decides, and built the backend, the document search, the admin upload feature and a simple chat page.</p></div></div>
+    <div class="chapter"><span class="n reveal">03 / THE WORK IN PRACTICE</span><div class="reveal d1"><h2>What got built.</h2><div class="trio"><div><h4>Understands the question</h4><p>A router first decides whether a message is general conversation, which it answers directly, or an IT question, which needs a search of the company documents.</p></div><div><h4>Checks its evidence</h4><p>It finds the best-matching passages in a document library (a Pinecone vector database), and an AI grader marks them good or weak before any answer is written.</p></div><div><h4>Never bluffs</h4><p>If the documents are weak it searches the web and grades those results too. If the web is weak as well, it still gives its best answer and clearly says what is missing.</p></div></div><div class="chips "><span>Python</span><span>LangGraph</span><span>FastAPI</span><span>Google Gemini</span><span>Pinecone</span><span>HuggingFace MiniLM</span><span>Tavily</span><span>SQLite</span><span>HTML/JS</span></div></div></div>
+    <div class="chapter"><span class="n reveal">04 / THE BIGGER PICTURE</span><div class="reveal d1"><h2>Why it matters.</h2><p>Admins can upload PDF, Word, text and Markdown files through a protected page, so the assistant learns new material without any coding. Every run is logged, so its behaviour can be reviewed later.</p></div></div>
+    <a class="next reveal" href="project-research-agents.html"><small>NEXT STORY →</small><h3>Multi-Agent AI Research System</h3></a>
+  </div>
+</section>
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <p class="lb reveal">Contact · Open to internships and projects</p>
+    <h2 class="huge gl sg" style="margin-top:26px">Let’s build something<br>useful <em>together.</em></h2>
+    <div class="cgrid">
+      <div class="cinfo reveal">
+        <p class="sub">I’m looking for AI and machine learning internships and entry-level roles. If you are hiring, want to collaborate, or are curious about a project, send me a message and I will reply.</p>
+        <div class="btns">
+          <a class="btn primary" href="#message" data-focus="message">Let’s connect ↓</a>
+          <a class="btn" href="https://www.linkedin.com/in/pankaj-yadav-7a8283297/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/15y-pankaj" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub ↗</a>
+        </div>
+        <p class="mail"><a href="mailto:15y.pankaj@gmail.com">15y.pankaj@gmail.com</a><button type="button" class="copy" data-copy="15y.pankaj@gmail.com">Copy email</button></p>
+      </div>
+      <form class="msg reveal" id="msgform" novalidate autocomplete="on">
+        <label for="m-name">Your name</label>
+        <input id="m-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+        <label for="m-email">Your email</label>
+        <input id="m-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Hi Pankaj, I would like to talk about…" required></textarea>
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="mrow"><button class="btn primary" type="submit" id="msend">Send message ↗</button><small>Press Enter to send · Shift + Enter for a new line</small></div>
+        <p class="mst" id="mst" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <a class="brand" href="#top">Pankaj Yadav.</a>
+      <div class="soc">
+        <a href="https://www.linkedin.com/in/pankaj-yadav-7a8283297/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/15y-pankaj" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://leetcode.com/u/15y_pankaj/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://www.codechef.com/users/pankaj_15y" target="_blank" rel="noopener">CodeChef</a>
+        <a href="tel:+919696317274">+91-9696317274</a>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="yr">2026</span> PANKAJ YADAV</span><span>BUILT WITH INTENT. ALWAYS EVOLVING.</span><span>BALLIA, INDIA ↗ THE WORLD</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
