@@ -671,6 +671,40 @@
     });
   }
 
+  /* ---------------- Work project filters ---------------- */
+  var projectFilters = $('[data-project-filters]');
+  if (projectFilters) {
+    var projectItems = $$('#projects [data-category]');
+    var filterButtons = $$('[data-filter]', projectFilters);
+    var filterStatus = $('[data-filter-status]', projectFilters);
+    var moreProjectsLabel = $('[data-project-more]');
+    var moreProjectsGrid = moreProjectsLabel && moreProjectsLabel.nextElementSibling;
+    if (projectItems.length && filterButtons.length && filterStatus) {
+      function filterProjects(category) {
+        var visibleCount = 0, visibleMoreCount = 0;
+        projectItems.forEach(function (item) {
+          var visible = category === 'all' || item.dataset.category === category;
+          item.hidden = !visible;
+          if (visible) {
+            visibleCount++;
+            if (item.classList.contains('card')) visibleMoreCount++;
+          }
+        });
+        filterButtons.forEach(function (button) {
+          button.setAttribute('aria-pressed', String(button.dataset.filter === category));
+        });
+        filterStatus.textContent = 'Showing ' + visibleCount + ' of ' + projectItems.length + ' projects';
+        if (moreProjectsLabel) moreProjectsLabel.hidden = visibleMoreCount === 0;
+        if (moreProjectsGrid) moreProjectsGrid.hidden = visibleMoreCount === 0;
+      }
+      filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () { filterProjects(button.dataset.filter); });
+      });
+      projectFilters.hidden = false;
+      filterProjects('all');
+    }
+  }
+
   /* ---------------- Gentle card tilt (mouse only, never while scrolling) ---------------- */
   var fine = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
   if (fine) {

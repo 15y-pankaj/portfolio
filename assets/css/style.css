@@ -244,6 +244,13 @@ h2,.big{font:var(--dw) clamp(2.6rem,6.2vw,5.6rem)/1.02 var(--display);letter-spa
 .card p{font-size:.86rem;color:var(--soft)}
 .all{display:inline-block;margin-top:30px;font:500 .7rem var(--mono);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--a1);padding-bottom:3px}
 .all:hover{color:var(--a1)}
+.project-filters{margin:0 0 34px}
+.project-filter-label{display:block;margin-bottom:12px;font:500 .62rem var(--mono);letter-spacing:.18em;color:var(--muted)}
+.project-filter-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.project-filter-buttons button{border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--soft);font:500 .68rem var(--mono);padding:10px 14px;cursor:pointer;transition:color .2s,border-color .2s,background .2s}
+.project-filter-buttons button:hover,.project-filter-buttons button[aria-pressed="true"]{border-color:var(--a1);color:var(--a1);background:rgba(var(--a1-rgb),.08)}
+.project-filter-buttons button:focus-visible{outline:2px solid var(--a1);outline-offset:3px}
+.project-filter-status{margin:12px 0 0;color:var(--muted);font:400 .62rem var(--mono);letter-spacing:.08em}
 
 /* work page list */
 .work-list{margin-top:50px}
